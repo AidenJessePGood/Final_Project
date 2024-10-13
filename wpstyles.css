@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hatdog{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(108.5deg, rgba(231, 69, 54, 0.82) 11.2%, rgba(255, 181, 17, 0.82) 68%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 13%;
+}
+.hatdog-text h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    line-height: 1;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.hatdog-text h4{
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    text-align: justify;
+}
+.hatdog-img img{
+    position: relative;
+    width: 700px;
+    height: auto;
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+.hatdog-img1 img {
+    width: 800px;
+    height: auto;
+}
+.hatdog-text1 {
+    grid-column: 2; /* Move the second paragraph to the right column */
+    text-align: right; /* Align the text to the right */
+    margin-right: 50px; /* Add some space to the right */
+}
+.hatdog-text1 h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    line-height: 1;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.hatdog-text1 h4{
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.icons{
+    position: relative;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-330%);
+    float: right;
+}
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+.icons i:hover{
+    transform: translateY(-5px);
+}
+.socmed{
+    position: absolute;
+    display: flex;
+    bottom: 6%;
+    right: 9%;
+}
+.socmed i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    transition: all .50s ease;
+}
+.socmed i:hover{
+    transform: translateY(-5px);
+}
+
+/* General styles already present in your file... */
+
+/* Laptops and Large Tablets (1024px and above) */
+@media (max-width: 1024px) {
+    header {
+        padding: 25px 7%;
+    }
+
+    .hatdog {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hatdog-img img {
+        width: 400px;
+        margin-left: 0;
+    }
+
+    .hatdog-text h1 {
+        font-size: 70px;
+    }
+
+    .hatdog-text p {
+        font-size: 15px;
+    }
+
+    .navlist {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+    
+    .hatdog {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hatdog-img img {
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .hatdog-text h1 {
+        font-size: 50px;
+    }
+
+    .hatdog-text p {
+        font-size: 14px;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+/* Small Tablets and Large Phones (480px - 768px) */
+@media (max-width: 480px) {
+    .hatdog-text h1 {
+        font-size: 40px;
+    }
+
+    .hatdog-text p {
+        font-size: 13px;
+    }
+
+    .hatdog-img img {
+        width: 250px;
+    }
+
+    .socmed {
+        bottom: 10%;
+        right: 5%;
+    }
+
+    .icons {
+        padding: 0 5%;
+    }
+}
+
+/* Extra Small Devices (phones under 480px) */
+@media (max-width: 320px) {
+    .hatdog-text h1 {
+        font-size: 30px;
+    }
+
+    .hatdog-text p {
+        font-size: 12px;
+    }
+
+    .hatdog-img img {
+        width: 200px;
+    }
+
+    .socmed {
+        bottom: 12%;
+        right: 3%;
+    }
+
+    .icons {
+        padding: 0 4%;
+    }
+}
