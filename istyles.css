@@ -23,6 +23,7 @@ header{
     font-weight: 700;
     color: white;
 }
+
 .navlist{
     display: flex;
 }
@@ -37,6 +38,9 @@ header{
 .navlist a:hover{
     border-bottom: 2px solid white;
 }
+
+
+
 #menu-icon{
     color: white;
     font-size: 30px;
@@ -150,5 +154,7 @@ section{
 .socmed i:hover{
     transform: translateY(-5px);
 }
-
+.fott{
+    text-align: center;
+}
 
