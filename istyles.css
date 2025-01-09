@@ -24,10 +24,10 @@ header{
     color: white;
 }
 
-.navlist{
+nav ul{
     display: flex;
 }
-.navlist a{
+nav ul li a{
     color: white;
     margin-left: 60px;
     font-size: 15px;
@@ -35,12 +35,12 @@ header{
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
-.navlist a:hover{
+nav ul li a:visited{
+    display: flex;
+}
+.navlist li a:hover{
     border-bottom: 2px solid white;
 }
-
-
-
 #menu-icon{
     color: white;
     font-size: 30px;
@@ -93,6 +93,7 @@ section{
     width: 500px;
     height: auto;
     margin-left: 50px;
+    margin-top: 70px;
 }
 .hatdog-text a{
     display: inline-block;
@@ -126,7 +127,7 @@ section{
     top: 50%;
     padding: 0 9%;
     transform: translateY(-330%);
-    float: right;
+    float: left;
 }
 .icons i{
     display: block;
@@ -154,7 +155,130 @@ section{
 .socmed i:hover{
     transform: translateY(-5px);
 }
-.fott{
+footer{
+    background: linear-gradient(108.5deg, rgba(231, 69, 54, 0.82) 11.2%, rgba(255, 181, 17, 0.82) 68%);
     text-align: center;
+    color: white;
 }
 
+/* General styles already present in your file... */
+
+/* Laptops and Large Tablets (1024px and above) */
+@media (max-width: 1024px) {
+    header {
+        padding: 25px 7%;
+    }
+
+    .hatdog {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hatdog-img img {
+        width: 400px;
+        margin-left: 0;
+    }
+
+    .hatdog-text h1 {
+        font-size: 70px;
+    }
+
+    .hatdog-text p {
+        font-size: 15px;
+    }
+
+    .navlist {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+    
+    .hatdog {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hatdog-img img {
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .hatdog-text h1 {
+        font-size: 50px;
+    }
+
+    .hatdog-text p {
+        font-size: 14px;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+/* Small Tablets and Large Phones (480px - 768px) */
+@media (max-width: 480px) {
+    .hatdog-text h1 {
+        font-size: 40px;
+    }
+
+    .hatdog-text p {
+        font-size: 13px;
+    }
+
+    .hatdog-img img {
+        width: 250px;
+    }
+
+    .socmed {
+        bottom: 10%;
+        right: 5%;
+    }
+
+    .icons {
+        padding: 0 5%;
+    }
+}
+
+/* Extra Small Devices (phones under 480px) */
+@media (max-width: 320px) {
+    .hatdog-text h1 {
+        font-size: 30px;
+    }
+
+    .hatdog-text p {
+        font-size: 12px;
+    }
+
+    .hatdog-img img {
+        width: 200px;
+    }
+
+    .socmed {
+        bottom: 12%;
+        right: 3%;
+    }
+
+    .icons {
+        padding: 0 4%;
+    }
+}
+
+::selection{
+    background-color: blue;
+}
+audio{
+    margin: 40px;
+}
